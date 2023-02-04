@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./0001.png);
+    /* overflow: hidden; */
+}
+#v-inicio{
+    display: none;
+}
+#sala-colonial{
+    position: absolute;
+    width: 202px;
+    height: 388px;
+    top: 23rem;
+    left: 28rem;
+    transform: rotate(0.18turn);
+}
