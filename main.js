@@ -17,7 +17,6 @@ const spanBtns = document.querySelectorAll('span');
 
 const handlerStart = (e) => {
     let src = e.target.getAttribute('data');
-    e.target.style = 'display: none';
     v_inicio.style = 'display: block';
     v_inicio.src = src;
     v_inicio.play();
