@@ -1,23 +1,32 @@
 const v_inicio = document.getElementById('v-inicio');
-const span_sala_colonial = document.getElementById('sala-colonial');
+const spanBtns = document.querySelectorAll('span');
+
+// const videos = {
+//     colonial: './colonial.mp4',
+//     independencia : './independencia.mp4',
+//     exodo: './exodo.mp4',
+//     gobernadores: './gobernadores.mp4',
+//     religiosa: './religiosa.mp4',
+//     vestidos: './vestidos.mp4',
+//     guerra_civil: './guerra civil.mp4',
+// }
 
 
 
 
 
-
-
-const handlerStart = () => {
-    span_sala_colonial.style = 'display: none';
+const handlerStart = (e) => {
+    let src = e.target.getAttribute('data');
+    e.target.style = 'display: none';
     v_inicio.style = 'display: block';
+    v_inicio.src = src;
     v_inicio.play();
 }
 
 const handlerFinish = (e) => {
-    e.target.style = '';
-    span_sala_colonial.style = '';
+    e.target.style = '';    
 }
 
 
-span_sala_colonial.addEventListener('click', handlerStart);
+spanBtns.forEach(span => span.addEventListener('click', handlerStart));
 v_inicio.addEventListener('ended', handlerFinish);

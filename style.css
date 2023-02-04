@@ -6,16 +6,66 @@ body{
     height: 100vh;
     width: 100vw;
     background-image: url(./0001.png);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-#v-inicio{
+video{
     display: none;
 }
+
 #sala-colonial{
     position: absolute;
-    width: 202px;
-    height: 388px;
-    top: 23rem;
-    left: 28rem;
+    width: 187px;
+    height: 148px;
+    top: 33rem;
+    left: 21rem;
+    transform: rotate(0.18turn);
+}
+
+#sala-religiosa{
+    position: absolute;
+    width: 122px;
+    height: 103px;
+    top: 18rem;
+    left: 69rem;
+    transform: rotate(0.18turn);
+}
+#sala-vestidos{
+    position: absolute;
+    width: 118px;
+    height: 105px;
+    top: 14rem;
+    left: 77rem;
+    transform: rotate(0.18turn);
+}
+#sala-independencia{
+    position: absolute;
+    width: 159px;
+    height: 236px;
+    top: 26rem;
+    left: 33rem;
+    transform: rotate(0.18turn);
+}
+#sala-gobernadores{
+    position: absolute;
+    width: 176px;
+    height: 230px;
+    top: 16rem;
+    left: 56rem;
+    transform: rotate(0.18turn);
+}
+#sala-exodo{
+    position: absolute;
+    width: 165px;
+    height: 144px;
+    top: 25rem;
+    left: 45rem;
+    transform: rotate(0.18turn);
+}
+#sala-guerra-civil{
+    position: absolute;
+    width: 165px;
+    height: 144px;
+    top: 35rem;
+    left: 55rem;
     transform: rotate(0.18turn);
 }
